@@ -10,7 +10,7 @@
 
 - 如何分析DANN方法初始数据的分布？
 
-   答：
+   答：TSNE图，源域是红色，目标域是蓝色
 
   注释掉 /content/Transfer-Learning-Library/examples/domain_adaptation/classification/damm_wad.py以下几行：
 
