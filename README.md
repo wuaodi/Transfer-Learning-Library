@@ -1,4 +1,4 @@
-[colab地址](https://colab.research.google.com/drive/1dd0WT9BmFmVWGnxFYNcKNjbeJHwYlHEo?usp=sharing)
+[colab地址](https://drive.google.com/file/d/1FMaKABipxM6TeDfX6Cr3SHCjUAXw5h8M/view?usp=sharing)
 
 [原readme文档](https://github.com/thuml/Transfer-Learning-Library)
 
