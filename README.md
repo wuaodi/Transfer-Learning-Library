@@ -28,3 +28,7 @@
   %cd /content/Transfer-Learning-Library/examples/domain_adaptation/classification
   !CUDA_VISIBLE_DEVICES=0 python dann_wad.py data/MRSSC -d MRSSC -s V -t I -v T -a resnet50 --epochs 10 --seed 1 --log logs/dann/MRSSC_V2I --phase analysis
   ```
+
+### 怎么输出混淆矩阵？
+
+   答：命令行加参数 '--per-class-eval'，去代码搜索 ConfusionMatrix 就能看到相应代码，修改代码可以print更多自己想要的
