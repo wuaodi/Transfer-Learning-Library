@@ -71,6 +71,8 @@ class ConfusionMatrix(object):
     def compute(self):
         """compute global accuracy, per-class accuracy and per-class IoU"""
         h = self.mat.float()
+        print("ConfusionMatrix:")
+        print(h)
         acc_global = torch.diag(h).sum() / h.sum()
         acc = torch.diag(h) / h.sum(1)
         iu = torch.diag(h) / (h.sum(1) + h.sum(0) - torch.diag(h))
