@@ -31,4 +31,4 @@
 
 ### 怎么输出混淆矩阵？
 
-   答：命令行加参数 '--per-class-eval'，去代码搜索 ConfusionMatrix 就能看到相应代码，修改代码可以print更多自己想要的
+   答：测试命令行加参数 '--per-class-eval'
