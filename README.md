@@ -10,7 +10,7 @@
 
 ### 如何分析DANN方法初始数据的分布？
 
-   答：TSNE图，源域是红色，目标域是蓝色
+   答：TSNE图，源域是蓝色，目标域是红色
 
   注释掉 /content/Transfer-Learning-Library/examples/domain_adaptation/classification/damm_wad.py以下几行：
 
@@ -28,6 +28,8 @@
   %cd /content/Transfer-Learning-Library/examples/domain_adaptation/classification
   !CUDA_VISIBLE_DEVICES=0 python dann_wad.py data/MRSSC -d MRSSC -s V -t I -v T -a resnet50 --epochs 10 --seed 1 --log logs/dann/MRSSC_V2I --phase analysis
   ```
+  
+  如果要是看数据经过训练后的网络的t-SNE图，就不用注释，先执行训练命令，再执行分析命令就好了
 
 ### 怎么输出混淆矩阵？
 
