@@ -150,8 +150,10 @@ def main(args: argparse.Namespace):
 
         # remember best acc@1 and save checkpoint
         torch.save(classifier.state_dict(), logger.get_checkpoint_path('latest'))
+        torch.save(classifier, logger.get_checkpoint_path('latest_all'))    # save weights and net arch
         if acc1 > best_acc1:
             shutil.copy(logger.get_checkpoint_path('latest'), logger.get_checkpoint_path('best'))
+            shutil.copy(logger.get_checkpoint_path('latest_all'), logger.get_checkpoint_path('best_all'))
         best_acc1 = max(acc1, best_acc1)
 
     print("best_acc1 = {:3.1f}".format(best_acc1))
